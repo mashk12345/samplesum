@@ -42,6 +42,12 @@
                 <sonar.host.url>
                     http://localhost:9000
                 </sonar.host.url>
+               <sonar.login>
+                    admin
+                </sonar.login>
+                <sonar.password>
+                  Sc7whe9h!13
+                </sonar.password>  
             </properties>
         </profile>
     </profiles>
@@ -68,5 +74,35 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+</build>
+    <distributionManagement>
+        <!-- Publish the versioned releases here -->
+        <repository>
+            <id>nexus_release</id>
+            <name>nexus_release</name>
+            <url>
+                http://localhost:8081/repository/maven-releases/
+            </url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- Publish the snapshot releases here -->
+        <snapshotRepository>
+            <id>nexus_snap</id>
+            <name>nexus_snap</name>
+            <url>
+                http://localhost:8081/repository/maven-snapshots/
+            </url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
