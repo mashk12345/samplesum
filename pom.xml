@@ -4,7 +4,7 @@
     <groupId>com.testsumproject</groupId>
     <artifactId>samplesum</artifactId>
     <packaging>war</packaging>
-    <version>1.11</version>
+    <version>1.5</version>
     <name>samplesum Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
