@@ -41,12 +41,8 @@ pipeline {
             steps {
                 sh "mvn clean deploy"
     }
-}
-      //  stage ('Build'){
-    //    steps {
-      //      echo 'Maven Practice tests'
-        //   checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'cred', url: 'https://github.com/mashk12345/samplesum.git']]])
-          //  sh "mvn -Dmaven.test.failure.ignore=true clean package" 
+} */
+      
         }
 } 
 
