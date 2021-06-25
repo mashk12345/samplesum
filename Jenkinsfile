@@ -34,9 +34,12 @@ pipeline {
             sh "whoami"
             sh "pwd"
             sh "ls -la"
-            sh "mvn clean install -X"
+            sh "mvn clean install sonar:sonar"
         }
     }
+        stage ('Build'){
+            steps {
+                sh "mvn clean deploy"
     }
 }
       //  stage ('Build'){
@@ -44,6 +47,6 @@ pipeline {
       //      echo 'Maven Practice tests'
         //   checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'cred', url: 'https://github.com/mashk12345/samplesum.git']]])
           //  sh "mvn -Dmaven.test.failure.ignore=true clean package" 
-        //}
-        //} 
+        }
+} 
 
