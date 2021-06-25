@@ -37,9 +37,10 @@ pipeline {
             sh "mvn clean install sonar:sonar"
         }
     }
-       stage ('Build'){
+       stage ('Deploy'){
             steps {
-                sh "mvn clean deploy"
+             //   sh "mvn clean deploy"
+                curl http://localhost:8081
     }
 } 
       
