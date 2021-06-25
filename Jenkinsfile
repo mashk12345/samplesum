@@ -21,12 +21,12 @@ pipeline {
         }
         }
 
-       /* stage ('Package'){
+        stage ('Package'){
             steps {
                 echo "Packaging"
                 sh "mvn package"
             }
-        } */
+        } 
 
         stage ('Install'){
         steps {
