@@ -81,7 +81,7 @@
             <id>nexus_release</id>
             <name>nexus_release</name>
             <url>
-               http://localhost:8081/repository/nexus_release/
+              http://192.168.56.104:8081/repository/nexus_release/
             </url>
             <releases>
                 <enabled>true</enabled>
@@ -95,7 +95,7 @@
             <id>nexus_snap</id>
             <name>nexus_snap</name>
             <url>
-                http://localhost:8081/repository/nexus_snap/
+                http://192.168.56.104:8081/repository/nexus_snap/
             </url>
             <releases>
                 <enabled>false</enabled>
