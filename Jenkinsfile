@@ -35,7 +35,7 @@ pipeline {
             sh "whoami"
             sh "pwd"
             sh "ls -la"
-            sh "mvn clean install org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
+            sh "mvn clean install"
         }
     }
        stage ('Deploy'){
