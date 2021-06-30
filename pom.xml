@@ -40,7 +40,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://192.168.56.104:9000
+                    http://localhost:9000
                 </sonar.host.url>
                <sonar.login>
                     admin
@@ -81,7 +81,7 @@
             <id>nexus_release</id>
             <name>nexus_release</name>
             <url>
-              http://192.168.56.104:8081/repository/nexus_release/
+              http://localhost:8081/repository/nexus_release/
             </url>
             <releases>
                 <enabled>true</enabled>
@@ -95,7 +95,7 @@
             <id>nexus_snap</id>
             <name>nexus_snap</name>
             <url>
-                http://192.168.56.104:8081/repository/nexus_snap/
+                http://localhost:8081/repository/nexus_snap/
             </url>
             <releases>
                 <enabled>false</enabled>
