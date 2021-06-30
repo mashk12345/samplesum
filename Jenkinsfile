@@ -32,15 +32,15 @@ pipeline {
         stage ('Install'){
         steps {
             echo "clean install"
-            sh "mvn install"
+            sh "mvn install deploy"
         }
     }
-       stage ('Deploy'){
+     /* stage ('Deploy'){
             steps {
                sh "mvn deploy"
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
-} 
+} */
       
         }
 } 
