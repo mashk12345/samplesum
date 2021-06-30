@@ -32,7 +32,7 @@ pipeline {
         stage ('Install'){
         steps {
             echo "clean install"
-            sh "mvn clean install"
+            sh "mvn install"
         }
     }
        stage ('Deploy'){
