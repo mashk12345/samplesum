@@ -40,7 +40,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://http://192.168.56.104:9000
+                    http://192.168.56.104:9000
                 </sonar.host.url>
                <sonar.login>
                     admin
