@@ -32,15 +32,12 @@ pipeline {
         stage ('Install'){
         steps {
             echo "clean install"
-            sh "whoami"
-            sh "pwd"
-            sh "ls -la"
             sh "mvn clean install"
         }
     }
        stage ('Deploy'){
             steps {
-               sh "mvn deploy"
+               sh "mvn clean deploy:deploy"
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
 } 
