@@ -34,6 +34,7 @@ pipeline {
         steps {
             echo "clean install"
             sh "mvn clean install"
+            sh "mvn --version"
         }
     }
       stage ('Deploy'){
