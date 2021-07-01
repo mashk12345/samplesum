@@ -46,7 +46,7 @@ pipeline {
                 sh "pwd"
                 sh "whoami"
                 
-               sh "mvn deploy"
+               sh "mvn deploy -X"
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
 } 
