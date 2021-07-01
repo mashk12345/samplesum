@@ -38,10 +38,10 @@ pipeline {
     }
       stage ('Deploy'){
             steps {
-                sh "cd ~"
+                // sh "cd ~"
                 sh "pwd"
-                
-               sh "mvn clean deploy"
+                sh "whoami"
+               sh "mvn clean deploy > logggs.txt"
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
 } 
