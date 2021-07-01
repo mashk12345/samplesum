@@ -38,6 +38,9 @@ pipeline {
     }
       stage ('Deploy'){
             steps {
+                sh "cd ~"
+                sh "pwd"
+                
                sh "mvn clean deploy"
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
