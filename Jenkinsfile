@@ -50,7 +50,12 @@ pipeline {
            //    sh "curl http://localhost:8081/repository/maven-releases/"
     }
 } 
-      
+      stage ('code quality'){
+            steps {
+                echo "Packaging"
+                sh "mvn sonar:sonar"
+            }
+        } 
         }
 } 
 
